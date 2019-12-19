@@ -44,8 +44,8 @@ public class PlayScreen extends AppCompatActivity {
   public int height;
   public final int PLAYERONEINT = 1;
   public final int PLAYERTWOINT = 2;
-  public int boardType;
-  public int boardSize;
+  public static int boardType;
+  public static int boardSize;
 
 
   //Bools
