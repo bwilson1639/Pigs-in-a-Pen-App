@@ -51,7 +51,7 @@ public class BoardType {
     inputtedState.setCellState(height, 0, voidedCell);
     inputtedState.setTopWallState(height, 0);
     inputtedState.setBottomWallState(height, 0);
-    inputtedState.setRightWallState();
+//    inputtedState.setRightWallState();
     inputtedState.setLeftWallState(height, 0);
 
 

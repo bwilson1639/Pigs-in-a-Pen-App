@@ -19,6 +19,7 @@ import android.widget.Spinner;
 public class MultiplayerSetupScreen extends AppCompatActivity {
 
   Spinner gameBoardSizeSpinner;
+  Spinner mapLayoutSpinner;
   public static int boardSize;
   public static int boardType;
   protected String sizeText;
@@ -44,6 +45,8 @@ public class MultiplayerSetupScreen extends AppCompatActivity {
     ScreenLogic.fullScreen(this);
 
     gameBoardSizeSpinner = findViewById(R.id.board_size_drop_down);
+    mapLayoutSpinner = findViewById(R.id.board_size_drop_down_difficulty);
+
 
     player2Animal = "";
     player1Animal = "";
@@ -77,7 +80,7 @@ public class MultiplayerSetupScreen extends AppCompatActivity {
       boardSize = 2;
     }
 
-    typeText = gameBoardSizeSpinner.getSelectedItem().toString();
+    typeText = mapLayoutSpinner.getSelectedItem().toString();
     if(typeText.equals("Normal")){
       boardType = 1;
     }
