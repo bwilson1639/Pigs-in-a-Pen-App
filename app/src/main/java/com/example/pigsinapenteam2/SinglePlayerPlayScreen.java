@@ -50,6 +50,7 @@ public class SinglePlayerPlayScreen extends PlayScreen {
     //===== Board State & Game State ======
     boardState = new BoardState(width,height);
     BoardType boardLayout = new BoardType(boardState,boardType, boardSize);
+    boardState = boardLayout.getInputtedState();
     gameState = new GameState(boardState, player1, player2,0);
     //===== Full Screen =====
     ScreenLogic.fullScreen(this);

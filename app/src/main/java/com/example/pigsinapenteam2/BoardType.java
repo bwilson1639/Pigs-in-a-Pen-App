@@ -36,6 +36,10 @@ public class BoardType {
     }//switch
   }//constructor
 
+  public BoardState getInputtedState(){
+    return this.inputtedState;
+  }
+
 
 
   private void gardenMapSetup(int boardSize){
